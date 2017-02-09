@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <main>
+        <form id="myForm" name="myForm" action="https://mauer.smeup.com/XMLService/cgi-bin/xmlcgi.pgm" method="post">
+            <input type="hidden" name="db2" value="*LOCAL">User: <input type="input" name="uid" value="">
+            <br>Password: <input type="password" name="pwd" value="">
+            <input type="hidden" name="ipc" value="*na">
+            <input type="hidden" name="ctl" value="*here">
+            <br>XML Input:
+            <br><textarea name="xmlin" rows="20" cols="100">
+<?xml version='1.0'?>
+<xmlservice>
+   <pgm name='MYRPGLE' lib='W_FIOGIA'>
+    <parm><data type='10A'>Prova</data></parm>
+    </pgm>
+</xmlservice>
+            </textarea>
+            <input type="hidden" name="xmlout" value="512000">
+            <br><input type="submit" name=submit " value="submit " />
+    </form>
+    </main>
+</body>
+</html>
